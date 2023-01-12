@@ -1,0 +1,14 @@
+# un imporant Files and Folders
+
+*.mp4
+project (large).png
+project (small).png
+
+
+# un important pretties module
+*.json
+node_modules/
+
+test.html
+.idea/
+fontawesome-free-6.2.1-web/

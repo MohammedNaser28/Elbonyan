@@ -1,0 +1,197 @@
+/*
+----01 Typography SYSTEM
+- Font weight:
+Default: 400
+500
+600
+700
+
+- Line heights:
+Deafult: 1
+small: 1.05
+Medium:1.2
+pargaraph: 1.06
+Large:1.8
+-Letter spacing
+-0.5px
+-0.75px
+
+
+-----02 COLORS
+
+- primary: #0E1133
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+- Shades:
+ #cf711f
+ #45260a
+- Accents:
+- Greys:
+#888
+#767676 (lightest grey allowed #fff)
+#6f6f6f (lightest grey allowed on  #fdf2ed )
+#555
+#333
+------ 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0,0,0,0.075)
+
+-------06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+-------07 WHITESPACE
+
+
+*/
+
+/************************************/
+/* HEADER*/
+/***********************************/
+
+header {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding:3rem 6rem;
+    height: 9rem;
+    background-color: #EEF1F6;
+    color: #EEF1F6;
+}
+
+
+/*nav {*/
+/*    font-size: 1.8rem;*/
+/*}*/
+
+
+
+.btn {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    color: #EEF1F6;
+    font-weight: 700;
+    margin-left: auto;
+    padding: 1.5rem 3rem;
+    background-color: #FF3E66;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.nav-header-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-header:link,
+.nav-header:visited{
+    color: #0E1133;
+    font-size: 1.6rem;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+
+/************************************/
+/* HEADER*/
+/***********************************/
+
+.hero-section {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 9rem;
+    padding: 6rem;
+    background-color: #EEF1F6;
+}
+
+.img-hero {
+    width: 100%;
+}
+
+
+.heading-primary {
+    font-size: 4.4rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+}
+
+
+.pra {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+label {
+    margin:3rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr /auto 2fr 0.2fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #FFFFFF;
+    border-radius: 25px ;
+
+}
+
+.email {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    width:100%;
+
+}
+
+.arrow-icon,
+.email-icon {
+    font-size: 1.8rem;
+    color: #C3C3CC;
+}
+
+.arrow-icon {
+    color: #FF3E66;
+}
+
+.customers {
+    display: flex;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+.customers-photo {
+    display: flex;
+
+}
+
+.customers-photo img {
+    height: 4rem;
+    width: 4rem;
+    margin-right: -1.5rem;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+
+.feed {
+    font-size: 1.2rem;
+}
+
+.feed span{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
