@@ -101,7 +101,6 @@ header {
 /***********************************/
 
 .hero-section {
-    max-width: 130rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
