@@ -50,22 +50,17 @@ Medium: 11px
 /************************************/
 /* HEADER*/
 /***********************************/
-
+:root {
+    --main-padding: 6rem;
+}
 header {
     display: flex;
     gap: 5rem;
     align-items: center;
-    padding:3rem 6rem;
+    padding:3rem var(--main-padding);
     height: 9rem;
     background-color: #EEF1F6;
-    color: #EEF1F6;
 }
-
-
-/*nav {*/
-/*    font-size: 1.8rem;*/
-/*}*/
-
 
 
 .btn {
@@ -93,7 +88,7 @@ header {
 .nav-header:link,
 .nav-header:visited{
     color: #0E1133;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .logo {
@@ -102,7 +97,7 @@ header {
 
 
 /************************************/
-/* HEADER*/
+/*    HERO   SECTION               */
 /***********************************/
 
 .hero-section {
@@ -112,7 +107,7 @@ header {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: 9rem;
-    padding: 6rem;
+    padding: var(--main-padding);
     background-color: #EEF1F6;
 }
 
@@ -129,10 +124,11 @@ header {
 
 
 .pra {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.25px;
 }
+
 
 label {
     margin:3rem 0;
@@ -143,8 +139,9 @@ label {
     align-items: center;
     padding: 1.5rem 2rem;
     background-color: #FFFFFF;
+    border-left: 3px solid #FF3E66;
     border-radius: 25px ;
-
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /20%)
 }
 
 .email {
@@ -168,13 +165,12 @@ label {
 .customers {
     display: flex;
     align-items: center;
-
     gap: 5rem;
 }
 
 .customers-photo {
     display: flex;
-
+    box-shadow: 0 2rem 2.2rem rgb(0 0 0 / 10%)
 }
 
 .customers-photo img {
@@ -195,3 +191,195 @@ label {
     font-size: 2.4rem;
 }
 
+/************************************/
+/*        FEATURES SECTION          */
+/************************************/
+
+.features-section {
+    padding: var(--main-padding);
+
+}
+
+
+.heading-secondary {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.pra-feature {
+    color: #50555B;
+    font-size: 1.4rem;
+    letter-spacing: -0.25px;
+}
+
+
+
+.features-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+.btn-view:visited,
+.btn-view:link {
+    color: #0E1133;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #0E113333;
+    border-radius: 25px;
+}
+
+
+.features-box {
+    margin: 4rem;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.features-box div {
+
+    padding: 5rem 6rem 5rem 4rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #50555B;
+    border: 1px solid #0E113313;
+    border-radius: 11px;
+}
+
+.features-box h3
+{
+    color: #0E1133;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+.features-box p {
+    margin-bottom: 2rem;
+}
+
+
+.features-box-icon {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.features-box-icon::before {
+    content: "";
+    padding: 1.4rem;
+    border-radius: 50%;
+}
+
+.fa-bolt-lightning::before {
+    background-color: #2EA9F8;
+}
+
+
+.fa-house::before {
+    background-color: #EA4D89;
+}
+
+.fa-link::before {
+    background-color: #3679FF;
+}
+
+.fa-bell::before {
+    background-color: #D8693A;
+}
+
+.fa-gear::before {
+    background-color: #6B88F7;
+}
+
+.fa-lock::before {
+    background-color: #3BB094;
+}
+
+.read-more:hover,
+.read-more:active {
+    cursor: pointer;
+}
+
+
+
+.marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:6rem;
+    overflow: hidden;
+}
+
+
+
+.text-marketing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 6rem 2rem 4rem;
+    letter-spacing: -0.25px;
+    background-image: linear-gradient(to right bottom, #ffffff,#F0F1F7);
+}
+
+
+.text-marketing h2 {
+    margin-bottom: 0;
+}
+
+.text-marketing span {
+    color: #FF3E66;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+}
+
+.img-marketing {
+    background-image:url("Project Images/about-thumb.png") ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.fer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fer div h3 {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0E1133;
+    margin-bottom: 1rem;
+}
+
+.fer div h3::before {
+
+    content: "\f058";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free',sans-serif;
+    font-size: 2rem;
+    left: -15%;
+    background-color:#ffffff;
+    color: #3BB094;
+    border-radius: 50%;
+}
+
+.fer div p {
+    font-size: 1.2rem;
+}
