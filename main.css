@@ -196,6 +196,7 @@ label {
 
 .features-section {
     padding: var(--main-padding);
+    margin: 0 auto;
 
 }
 
@@ -314,6 +315,7 @@ label {
 
 
 .marketing {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:6rem;
@@ -329,7 +331,7 @@ label {
     gap: 2rem;
     padding: 2rem 6rem 2rem 4rem;
     letter-spacing: -0.25px;
-    background-image: linear-gradient(to right bottom, #ffffff,#F0F1F7);
+    background-color: #F0F1F7;
 }
 
 
@@ -344,9 +346,11 @@ label {
 }
 
 .img-marketing {
-    background-image:url("Project Images/about-thumb.png") ;
-    background-position: center;
-    background-size: cover;
+    background-image: url("Project Images/about-thumb.png");
+    background-size: 48% 155%;
+    background-position: 16rem -2.5rem;
+    background-repeat: no-repeat;
+
 }
 
 
