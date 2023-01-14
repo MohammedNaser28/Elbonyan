@@ -329,7 +329,7 @@ label {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem 6rem 2rem 4rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     letter-spacing: -0.25px;
     background-color: #F0F1F7;
 }
@@ -347,8 +347,8 @@ label {
 
 .img-marketing {
     background-image: url("Project Images/about-thumb.png");
-    background-size: 48% 155%;
-    background-position: 16rem -2.5rem;
+    background-size: 70%;
+    background-position: 17rem -2.5rem;
     background-repeat: no-repeat;
 
 }
@@ -385,4 +385,30 @@ label {
 
 .fer div p {
     font-size: 1.2rem;
+}
+
+
+@media (min-width: 90em) {
+    .marketing {
+
+    }
+    .img-marketing {
+        background-size: 55%;
+        background-position: 30rem -3rem;
+
+    }
+
+    .text-marketing {
+        gap: 3rem;
+    }
+
+  .pra-feature {
+      font-size: 1.6rem;
+
+  }
+
+    .text-marketing span {
+        font-size: 1.2rem;
+        letter-spacing: -0.1px;
+    }
 }
