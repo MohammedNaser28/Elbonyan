@@ -52,6 +52,7 @@ Medium: 11px
 /***********************************/
 :root {
     --main-padding: 6rem;
+    --main-font-size: 1.2rem;
 }
 header {
     display: flex;
@@ -110,7 +111,7 @@ header {
     background-color: #EEF1F6;
 }
 
-.img-hero {
+.img {
     width: 100%;
 }
 
@@ -316,6 +317,7 @@ label {
 
 .marketing {
     margin: 0 auto;
+    background-color: #F0F1F7;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:6rem;
@@ -331,7 +333,6 @@ label {
     gap: 2rem;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     letter-spacing: -0.25px;
-    background-color: #F0F1F7;
 }
 
 
@@ -347,14 +348,14 @@ label {
 
 .img-marketing {
     background-image: url("Project Images/about-thumb.png");
-    background-size: 70%;
-    background-position: 17rem -2.5rem;
+    background-size:contain;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
 
 
-.fer {
+.mark {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -363,7 +364,7 @@ label {
 
 }
 
-.fer div h3 {
+.mark div h3 {
     position: relative;
     font-size: 1.6rem;
     font-weight: 600;
@@ -371,7 +372,7 @@ label {
     margin-bottom: 1rem;
 }
 
-.fer div h3::before {
+.mark div h3::before {
 
     content: "\f058";
     position: absolute;
@@ -383,32 +384,107 @@ label {
     border-radius: 50%;
 }
 
-.fer div p {
+.mark div p {
     font-size: 1.2rem;
 }
 
+.feature-thumb {
+    margin: 0 auto;
+    padding:var(--main-padding) calc(var(--main-padding) *3);
+    background-color: #0E1133;
 
-@media (min-width: 90em) {
-    .marketing {
 
-    }
-    .img-marketing {
-        background-size: 55%;
-        background-position: 30rem -3rem;
-
-    }
-
-    .text-marketing {
-        gap: 3rem;
-    }
-
-  .pra-feature {
-      font-size: 1.6rem;
-
-  }
-
-    .text-marketing span {
-        font-size: 1.2rem;
-        letter-spacing: -0.1px;
-    }
 }
+
+.thumb-title {
+    color: #EEF1F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+
+.thumb-title h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.thumb-title p {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    letter-spacing: -0.25px;
+}
+
+.thumb-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6rem;
+}
+
+.thumb-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.thumb-box div {
+    border: 1px solid #202234;
+    border-radius: 6px;
+    padding: calc(var(--main-padding)/2);
+    padding-left: calc(var(--main-padding));
+}
+
+
+.thumb-box div h4 {
+    position: relative;
+    font-size: calc(var(--main-font-size) + 0.4rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+.thumb-box div:nth-child(1) h4::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free',sans-serif;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    position: absolute;
+    left: -12%;
+    color: #FF3E66;
+    background-color: #2A182D;
+    border-radius: 50%;
+}
+
+
+.thumb-box div:nth-child(2) h4::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free',sans-serif;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    position: absolute;
+    left: -12%;
+    color: #2EACFC;
+    background-color: #15233D;
+    border-radius: 50%;
+}
+
+.thumb-box div:nth-child(3) h4::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free',sans-serif;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    position: absolute;
+    left: -12%;
+    color: #33C956;
+    background-color: #15262C;
+    border-radius: 50%;
+}
+
+.thumb-box div p {
+    font-size: calc(var(--main-font-size));
+}
+
