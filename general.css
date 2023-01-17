@@ -22,3 +22,8 @@ body {
 a {
     text-decoration: none;
 }
+
+
+.img-full {
+    width: 100%;
+}
