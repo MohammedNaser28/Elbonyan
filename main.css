@@ -762,8 +762,100 @@ sup {
 .pricing-panel:nth-child(2) .btn-plan {
     font-size: 1.2rem;
     font-weight: 500;
-    /*padding: 1rem 2rem;*/
     border: 1px solid #FF3E66;
     color: #E7EAEF;
     background-color: #FF3E66;
+}
+
+
+
+
+.testimonial {
+    padding: var(--main-padding) calc(var(--main-padding) * 2);
+}
+
+.testimonial-container {
+    margin:0 auto;
+    background-image: url("Project Images/testimonial-background.jpeg");
+    padding:  var(--main-padding) calc(var(--main-padding) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+}
+
+
+
+
+.img-box-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-box {
+    padding: 0.5rem;
+    background-color: #DADADA;
+    border-radius: 50%;
+}
+
+.img-box img {
+
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.star-list {
+    display: flex;
+    color: yellow;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.img-box-testimonial p {
+    color: #919194;
+    font-size: 1.2rem;
+}
+
+
+.testimonial-text {
+    color: #DADADA;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+
+
+.testimonial-text p {
+    margin-bottom: 1.5rem;
+}
+
+.footer-testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-testimonial p {
+    color: #919194;
+}
+.footer-testimonial  span {
+    color: #DADADA;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.forward-icon-box a {
+    margin-right: 1rem;
+    border: 1px solid #919194;
+    border-radius: 50%;
+    padding:1rem;
+}
+
+
+.forward-icon-box i {
+    color: #DADADA;
 }
