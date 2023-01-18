@@ -54,15 +54,22 @@ Medium: 11px
     --main-padding: 6rem;
     --main-font-size: 1.2rem;
 }
+
 .header {
     display: flex;
     gap: 5rem;
     align-items: center;
     padding:3rem var(--main-padding);
     height: 9rem;
+    margin-bottom: 1rem;
     background-color: #EEF1F6;
 }
 
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 
 .btn {
     font-family: 'Roboto',sans-serif;
@@ -70,7 +77,6 @@ Medium: 11px
     letter-spacing: 0.5px;
     color: #EEF1F6;
     font-weight: 700;
-    margin-left: auto;
     padding: 1.5rem 3rem;
     background-color: #FF3E66;
     border-radius: 25px;
@@ -79,6 +85,7 @@ Medium: 11px
 }
 
 .nav-header-list {
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,7 +109,7 @@ Medium: 11px
 /***********************************/
 
 .hero-section {
-    margin: 0 auto;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -1054,3 +1061,4 @@ footer {
     color: #50555B;
     font-size: 1.4rem;
 }
+
