@@ -941,19 +941,18 @@ sup {
 
 
 footer {
-    /*position: absolute;*/
-    top: 60%;
+
     display: flex;
     flex-direction: column;
-    padding: 6rem;
+    padding: 8rem;
     background-color: #EEF1F6;
 }
 
 .start-footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 6rem;
 }
 
 .social-container-footer {
@@ -976,6 +975,7 @@ footer {
 }
 
 .social-logo li i{
+    color: #0F1234;
     font-size: 1.4rem;
 }
 .read-more:visited,
@@ -1008,6 +1008,8 @@ footer {
     font-size: 1.2rem;
 
 }
+
+
 .nav-list address,
 .nav-list a:visited,
 .nav-list a:link {
@@ -1017,10 +1019,15 @@ footer {
     display: flex;
     gap: 1.2rem;
 }
+
 .nav-list li i
 {
-    color: #2EA9F8;
+    color: #2B70FA;
 }
+
+
+
+
 .end-footer {
     padding: 6rem;
     display: flex;
