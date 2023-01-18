@@ -54,36 +54,43 @@ Medium: 11px
     --main-padding: 6rem;
     --main-font-size: 1.2rem;
 }
-header {
+
+.header {
     display: flex;
     gap: 5rem;
     align-items: center;
+    justify-content: space-between;
     padding:3rem var(--main-padding);
     height: 9rem;
+    margin-bottom: 1rem;
     background-color: #EEF1F6;
 }
 
+.header-nav {
+    justify-content: space-between;
+    width: 80%;
+}
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
     font-family: 'Roboto',sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     color: #EEF1F6;
     font-weight: 700;
-    margin-left: auto;
     padding: 1.5rem 3rem;
     background-color: #FF3E66;
     border-radius: 25px;
     cursor: pointer;
-
 }
 
 .nav-header-list {
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2.5rem;
-    list-style: none;
 }
 
 .nav-header:link,
@@ -96,13 +103,32 @@ header {
     height: 2.5rem;
 }
 
+.get-start-mobile,
+.btn-mobile-nav {
+    border:none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.mobile-open,
+.mobile-close {
+    height: 4.8rem;
+    width: 4.8rem;
+    color:#333;
+}
+
+.mobile-close{
+    display: none;
+}
 
 /************************************/
 /*    HERO   SECTION               */
 /***********************************/
 
 .hero-section {
-    margin: 0 auto;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -210,7 +236,7 @@ label {
 
 
 .pra-feature,
-.slide-pra {
+.slide-pra{
     color: #50555B;
     font-size: 1.4rem;
     letter-spacing: -0.25px;
@@ -222,15 +248,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 6rem;
 }
 
 
 .features-heading-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-bottom: 3rem;
 }
 
@@ -258,9 +280,6 @@ label {
 
     padding: 5rem 6rem 5rem 4rem;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #50555B;
@@ -319,10 +338,18 @@ label {
     background-color: #3BB094;
 }
 
-.read-more:hover,
-.read-more:active {
+.read-more:visited,
+.read-more:link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #50555B;
     cursor: pointer;
+
 }
+
+/*.read-more:hover,*/
+/*.read-more:active {*/
+/*}*/
 
 
 
@@ -338,9 +365,6 @@ label {
 
 
 .text-marketing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 2rem;
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     letter-spacing: -0.25px;
@@ -368,12 +392,9 @@ label {
 
 
 .mark {
-    display: flex;
-    flex-direction: row;
     gap: 3rem;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .mark div h3 {
@@ -410,8 +431,6 @@ label {
 
 .thumb-title {
     color: #EEF1F6;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
     gap: 2rem;
@@ -438,8 +457,6 @@ label {
 }
 
 .thumb-box {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     align-items: center;
 }
@@ -459,41 +476,36 @@ label {
     margin-bottom: 1rem;
     color: white;
 }
-.thumb-box div:nth-child(1) h4::before {
+
+
+.thumb-box div h4::before {
     content: "\f111";
     font-family: 'Font Awesome 6 Free',sans-serif;
     font-size: 1.4rem;
     padding: 0.4rem;
     position: absolute;
     left: -12%;
+    border-radius: 50%;
+
+}
+
+
+.thumb-box div:nth-child(1) h4::before {
+
     color: #FF3E66;
     background-color: #2A182D;
-    border-radius: 50%;
 }
 
 
 .thumb-box div:nth-child(2) h4::before {
-    content: "\f111";
-    font-family: 'Font Awesome 6 Free',sans-serif;
-    font-size: 1.4rem;
-    padding: 0.4rem;
-    position: absolute;
-    left: -12%;
     color: #2EACFC;
     background-color: #15233D;
-    border-radius: 50%;
 }
 
 .thumb-box div:nth-child(3) h4::before {
-    content: "\f111";
-    font-family: 'Font Awesome 6 Free',sans-serif;
-    font-size: 1.4rem;
-    padding: 0.4rem;
-    position: absolute;
-    left: -12%;
     color: #33C956;
     background-color: #15262C;
-    border-radius: 50%;
+
 }
 
 .thumb-box div p {
@@ -504,13 +516,14 @@ label {
     margin: 0 auto;
 }
 
+
 .tufrag .features-heading-box {
-    margin: 0 auto;
+
+
     padding: 6rem;
 }
 
 .box-icon-container {
-    display: flex;
     justify-content: space-around;
     padding: 0 6rem;
 
@@ -519,10 +532,7 @@ label {
 
 
 .box-icon {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 3rem;
     text-align: center;
     box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /20%)
@@ -580,29 +590,21 @@ label {
 .download {
     margin: 0 auto;
     background-color: #EEF1F6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
     padding: 8rem 6rem;
     letter-spacing: -0.25px;
 }
 
 .buttons {
     margin-top: 1rem;
-    display: flex;
     gap: 2rem;
     align-items: center;
 }
 
 .buttons a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     border: 2px solid #0E1133;
     border-radius: 12px;
     font-size: 1.2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 
 }
 .buttons a:nth-child(1){
@@ -623,5 +625,417 @@ label {
 
 .buttons a i {
     font-size: 3.6rem;
+}
+
+
+/*******************************************/
+/*          Pricing Container              */
+/*******************************************/
+
+
+.pricing {
+    padding:var(--main-padding);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.btn-time {
+    text-align: center;
+    display: inline-block;
+    margin-top: 5rem;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid #0E113333;
+    border-radius: 25px;
+}
+
+
+.btn-time span:nth-child(1) {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #FF3E66;
+    border-radius: 25px;
+}
+
+
+.btn-time span:nth-child(2) {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0F1234;
+
+}
+
+.pricing-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 4rem;
+}
+
+
+
+
+
+.pricing-panel {
+    text-align: left;
+    position: relative;
+    padding: 3rem 4rem ;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /10%)
+
+}
+
+
+
+
+.pricing-panel:nth-child(2) {
+    border-top: 3px solid #FF4168;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /15%);
+    overflow:hidden;
+}
+
+
+.pricing-panel:nth-child(2)::after
+{
+    content: "Most Popular";
+    position: absolute;
+    top: 6%;
+    right: 0;
+    background-color: #2A6DF5;
+    color: #FFFDFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 25px 0 0 25px ;
+}
+
+.header-pricing {
+    margin: 1rem 0 3rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid  #E1E4EA;
+
+}
+
+
+.header-pricing span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+.header-pricing p span {
+    color: #0F1234;
+    font-size: 2.6rem;
+}
+
+.pricing-pra{
+color: #50555B;
+font-size: 1.2rem;
+letter-spacing: -0.25px;
+}
+
+
+
+sup {
+    color: #0F1234;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+.list {
+
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing-panel i {
+    color: #5B8FF7;
+}
+
+.pricing-panel:nth-child(3) i {
+    color: #59BE7F;
+}
+
+
+.btn-plan {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    border: 1px solid #E7EAEF;
+    color: #202234;
+    border-radius: 25px;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /10%)
+
+}
+
+
+.pricing-panel:nth-child(2) .btn-plan {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid #FF3E66;
+    color: #E7EAEF;
+    background-color: #FF3E66;
+}
+
+
+/*******************************************/
+/*          Testimonial Container          */
+/*******************************************/
+
+
+
+.testimonial {
+    padding: var(--main-padding) calc(var(--main-padding) * 2);
+}
+
+.testimonial-container {
+    margin:0 auto;
+    background-image: url("Project Images/testimonial-background.jpeg");
+    padding:  calc(var(--main-padding) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+}
+
+
+/*  I replaced it with flex column static*/
+
+/*.img-box-testimonial {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: 1rem;*/
+/*}*/
+
+.img-box {
+    padding: 0.5rem;
+    background-color: #DADADA;
+    border-radius: 50%;
+}
+
+.img-box img {
+
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.star-list {
+    display: flex;
+    color: yellow;
+    gap: 0.5rem;
+}
+
+.img-box-testimonial p {
+    color: #919194;
+    font-size: 1.2rem;
+}
+
+
+.testimonial-text {
+    color: #DADADA;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+
+
+.testimonial-text p {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.footer-testimonial {
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-testimonial p {
+    color: #919194;
+}
+.footer-testimonial  span {
+    color: #DADADA;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.forward-icon-box a {
+    margin-right: 1rem;
+    border: 1px solid #919194;
+    border-radius: 50%;
+    padding:1rem;
+}
+
+
+.forward-icon-box i {
+    color: #DADADA;
+}
+
+
+/*******************************************/
+/*          Sponsors Container              */
+/*******************************************/
+
+
+.sponsors {
+    margin: 0 auto;
+    padding: var(--main-padding);
+    text-align: center;
+}
+
+.sponsors-logo-container {
+    margin:auto;
+    flex-wrap: wrap;
+    padding: 6rem 25rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sponsors-logo-container  div {
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /30%);
+    border-radius: 6px;
+
+}
+
+
+
+
+/*******************************************/
+/*          Footer Container             */
+/*******************************************/
+
+
+footer {
+    padding: 8rem;
+    background-color: #EEF1F6;
+}
+
+.start-footer{
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+/*  I replaced it with flex culomn static*/
+
+
+/*.social-container-footer {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*  I replaced it with flex row static*/
+
+/*.social-logo {*/
+/*    display: flex;*/
+/*    gap: 1rem;*/
+/*}*/
+
+.social-logo li {
+    padding: 1rem;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /25%)
+}
+
+.social-logo li i{
+    color: #0F1234;
+    font-size: 1.4rem;
+}
+.read-more:visited,
+.read-more:link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #50555B;
+    cursor: pointer;
+
+}
+.read-more-footer:visited,
+.read-more-footer:link{
+    font-weight: 500;
+    margin: 1.5rem 0;
+    color: #0E1132;
+}
+
+
+.header-nav-footer {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+}
+
+
+.nav-list address,
+.nav-list a:visited,
+.nav-list a:link {
+    color: #50555B;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-list li i
+{
+    color: #2B70FA;
+}
+
+
+
+
+.end-footer {
+    padding: 6rem;
+    justify-content: space-between;
+}
+.download-footer-buttons {
+
+    gap:2rem;
+}
+
+
+.btn-footer {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    color: #0E1133;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /20%)
+
+}
+.btn-footer i {
+    margin-right: 1rem;
+
+}
+.copyright {
+    color: #50555B;
+    font-size: 1.4rem;
 }
 
