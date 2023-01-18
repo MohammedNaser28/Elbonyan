@@ -222,7 +222,6 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 6rem;
 }
 
@@ -319,10 +318,18 @@ label {
     background-color: #3BB094;
 }
 
-.read-more:hover,
-.read-more:active {
+.read-more:visited,
+.read-more:link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #50555B;
     cursor: pointer;
+
 }
+
+/*.read-more:hover,*/
+/*.read-more:active {*/
+/*}*/
 
 
 
@@ -505,8 +512,9 @@ label {
 }
 
 
-.features-heading-box {
-    margin: 0 auto;
+.tufrag .features-heading-box {
+
+
     padding: 6rem;
 }
 
@@ -639,6 +647,34 @@ label {
 }
 
 
+.btn-time {
+    text-align: center;
+    display: inline-block;
+    margin-top: 5rem;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid #0E113333;
+    border-radius: 25px;
+}
+
+
+.btn-time span:nth-child(1) {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #FF3E66;
+    border-radius: 25px;
+}
+
+
+.btn-time span:nth-child(2) {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0F1234;
+
+}
 
 .pricing-container {
     margin: 0 auto;
@@ -768,6 +804,10 @@ sup {
 }
 
 
+/*******************************************/
+/*          Testimonial Container          */
+/*******************************************/
+
 
 
 .testimonial {
@@ -777,7 +817,7 @@ sup {
 .testimonial-container {
     margin:0 auto;
     background-image: url("Project Images/testimonial-background.jpeg");
-    padding:  var(--main-padding) calc(var(--main-padding) * 2);
+    padding:  calc(var(--main-padding) * 2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -823,14 +863,15 @@ sup {
 
 .testimonial-text {
     color: #DADADA;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
 
 
 .testimonial-text p {
-    margin-bottom: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .footer-testimonial {
@@ -858,4 +899,151 @@ sup {
 
 .forward-icon-box i {
     color: #DADADA;
+}
+
+
+/*******************************************/
+/*          Sponsors Container              */
+/*******************************************/
+
+
+.sponsors {
+    margin: 0 auto;
+    padding: var(--main-padding);
+    text-align: center;
+}
+
+.sponsors-logo-container {
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem 25rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sponsors-logo-container  div {
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /30%);
+    border-radius: 6px;
+
+}
+
+
+
+
+/*******************************************/
+/*          Footer Container             */
+/*******************************************/
+
+
+footer {
+    /*position: absolute;*/
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    background-color: #EEF1F6;
+}
+
+.start-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.social-container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.social-logo {
+    display: flex;
+    gap: 1rem;
+
+
+}
+
+.social-logo li {
+    padding: 1rem;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /25%)
+}
+
+.social-logo li i{
+    font-size: 1.4rem;
+}
+.read-more:visited,
+.read-more:link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #50555B;
+    cursor: pointer;
+
+}
+.read-more-footer:visited,
+.read-more-footer:link{
+    font-weight: 500;
+    margin: 1.5rem 0;
+    color: #0E1132;
+}
+
+
+.header-nav-footer {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+}
+.nav-list address,
+.nav-list a:visited,
+.nav-list a:link {
+    color: #50555B;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    gap: 1.2rem;
+}
+.nav-list li i
+{
+    color: #2EA9F8;
+}
+.end-footer {
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.download-footer-buttons {
+    display: flex;
+    gap:2rem;
+}
+
+
+.btn-footer {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    color: #0E1133;
+    box-shadow: 0 3.4rem 6.8rem rgb(0 0 0 /20%)
+
+}
+.btn-footer i {
+    margin-right: 1rem;
+
+}
+.copyright {
+    color: #50555B;
+    font-size: 1.4rem;
 }
