@@ -18,7 +18,9 @@ body {
     color: #0E1133;
     overflow-x: scroll;
 }
-
+.img-full {
+    width: 100%;
+}
 
 a {
     text-decoration: none;
@@ -28,9 +30,21 @@ ul {
     list-style: none;
 }
 
-.img-full {
-    width: 100%;
+
+.flex-row,
+.flex-row-static {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
+
+.flex-culomn-static {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 
 .sticky ,
 .header{
