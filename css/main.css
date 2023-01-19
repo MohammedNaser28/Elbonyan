@@ -74,7 +74,6 @@ Medium: 11px
 .btn,
 .btn:link,
 .btn:visited {
-    font-family: 'Roboto',sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     color: #EEF1F6;
@@ -383,7 +382,7 @@ label {
 }
 
 .img-marketing {
-    background-image: url("Project Images/about-thumb.png");
+    background-image: url("../images/Project Images/about-thumb.png");
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -807,7 +806,7 @@ sup {
 
 .testimonial-container {
     margin:0 auto;
-    background-image: url("Project Images/testimonial-background.jpeg");
+    background-image: url("../images/Project Images/testimonial-background.jpeg");
     padding:  calc(var(--main-padding) * 2);
     display: flex;
     align-items: center;
