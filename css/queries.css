@@ -190,7 +190,7 @@
 
     }
 .img-hero-box {
-    background: url("Project Images/hero.png")  no-repeat right bottom;
+    background: url("../images/Project Images/hero.png")  no-repeat right bottom;
     background-size: contain;
     padding: 6rem;
 }
