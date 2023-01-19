@@ -86,9 +86,10 @@
 @media (max-width: 45em) {
 
     /* Nav bar*/
-
 .header {
-    align-items:normal;}
+
+    align-items: normal;
+    }
     .header-nav {
         flex-direction: row-reverse;
     }
