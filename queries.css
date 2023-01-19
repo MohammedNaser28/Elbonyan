@@ -87,7 +87,8 @@
 
     /* Nav bar*/
 
-
+.header {
+    align-items:normal;}
     .header-nav {
         flex-direction: row-reverse;
     }
