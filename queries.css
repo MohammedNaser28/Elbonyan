@@ -96,9 +96,6 @@
     .btn-mobile-nav {
         border: none;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .header-nav {
